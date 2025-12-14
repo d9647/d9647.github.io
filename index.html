@@ -1,0 +1,387 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Wee Ding Ng</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			.carousel-container {
+				position: relative;
+				width: 10.25rem;
+				height: 9.25rem;
+				margin: 0 auto;
+			}
+			.carousel-image {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				max-width: 10.25rem;
+				max-height: 9.25rem;
+				width: auto;
+				height: auto;
+				opacity: 0;
+				transition: opacity 0.5s ease-in-out;
+			}
+			.carousel-image.active {
+				opacity: 1;
+			}
+			.carousel-dots {
+				position: absolute;
+				bottom: -20px;
+				left: 50%;
+				transform: translateX(-50%);
+				display: flex;
+				gap: 8px;
+			}
+			.carousel-dot {
+				width: 8px;
+				height: 8px;
+				border-radius: 50%;
+				background-color: rgba(255, 255, 255, 0.5);
+				cursor: pointer;
+				transition: background-color 0.3s;
+			}
+			.carousel-dot.active {
+				background-color: rgba(255, 255, 255, 1);
+			}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<!--<span class="logo"><img src="images/profile.png" alt="" /></span>-->
+						<h1>Wee Ding Ng</h1>
+						<p>Software Testing, QA Automation, BI, Data Analyst<br />
+						Connect with me on <a href="https://linkedin.com/in/weedingng">LinkedIn</a> </p>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="#intro" class="active">About Me</a></li>
+							<li><a href="#first">Recent Projects</a></li>
+							<li><a href="#second">Current Projects</a></li>
+							<li><a href="#cta">Skills</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h2>About Me</h2>
+										</header>
+										<p>I love data and technology, and how they can be used to solve real-world problems. I have a strong eye for quality and detail, and I enjoy working in teams to deliver high-quality products. My earlier experiences in software QA—before my career gap—shaped me to be adaptable, resilient, and a fast learner.</p> 
+										<p>I hold a Bachelor of Applied Science in Computer Engineering and a Master’s in Communication, Software & Network from NTU, Singapore and I am currently advancing my analytical and technical expertise as a Master of Science in Analytics student at Georgia Tech.</p>
+										
+										<ul class="actions">
+											<li><a href="generic.html" class="button">Learn More</a></li>
+										</ul>
+									</div>
+									<span class="icon solid major style1 image small-icon"><img src="images/profile.png" alt="" /></span>
+								</div>
+							</section>
+
+						<!-- First Section -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h2>Recent Projects</h2>
+								</header>
+								<ul class="features">
+									<li>
+										<span class="icon solid major style1 image" style="width: 12rem; height: 12rem; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 5px transparent, 0 0 0 6px rgba(255, 255, 255, 0.35);"><a href="images/tableau_sc1.png" target="_blank"><img src="images/tableau_sc1.png" alt="" style="max-width: 10.25rem; max-height: 9.25rem; width: auto; height: auto; cursor: pointer;" /></a></span>
+										<h3> LA Crime Dashboard</h3>
+										<p>EDA, Python (Pandas, NumPy), ETL, Tableau</p>
+										<p>This project showcases Los Angeles crime statistics (2010--2023) in an interactive Tableau Dashboard. The LAPD crime datasets are cleaned and merged with census data to provide comprehensive insights into crime trends across the LA city.</p>
+										<p class="actions special"><a href="https://prod-apsoutheast-b.online.tableau.com/t/xsskoc/views/LACityCrime_Dashboard/LACityCrimeInsights/8727f685-c1be-4bcb-b693-e5417c65ef44/2cf6bf6c-2fd0-4153-9356-6c8febd5bdeb" class="button">Live Dashboard</a></p>
+										<p class="actions special"><a href="https://github.com/d9647/cse6242_team7" class="button">Github Repository</a></p>
+									</li>
+									<li>
+										<span class="icon solid major style1 image" style="width: 12rem; height: 12rem; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 5px transparent, 0 0 0 6px rgba(255, 255, 255, 0.35);">
+											<div class="carousel-container" id="crimeInsightsCarousel">
+												<img src="images/tableau_sc2.png" alt="LA Smart Crime Insights 1" class="carousel-image active" data-full-url="images/tableau_sc2.png" style="max-width: 10.25rem; max-height: 9.25rem; width: auto; height: auto; cursor: pointer;" />
+												<img src="images/tableau_sc3.png" alt="LA Smart Crime Insights 2" class="carousel-image" data-full-url="images/tableau_sc3.png" style="max-width: 10.25rem; max-height: 9.25rem; width: auto; height: auto; cursor: pointer;" />
+												<div class="carousel-dots">
+													<span class="carousel-dot active" data-index="0"></span>
+													<span class="carousel-dot" data-index="1"></span>
+												</div>
+											</div>
+										</span>
+										<h3>LA Smart Crime Insights </h3>
+										<p>EDA, Jupyter Notebook, Python (scikit-learn, pandas, numpy, matplotlib, seaborn), Tableau, ETL, Machine Learning</p>
+										<p>This project analyzes Los Angeles crime data (2010--2023) uncover temporal, spatial, and demographic patterns and to assess how the COVID-19 pandemic affected crime dynamics. It integrates census data, spatial regression, time-series forecasting, and interactive dashboards.</p>
+										<p class="actions special"><a href="https://public.tableau.com/shared/XG84W6H94?:display_count=n&:origin=viz_share_link" class="button">Live Dashboard</a></p>
+										<p class="actions special"><a href="https://github.com/d9647/cse6242_team7/blob/main/DOC/team007report.pdf" class="button">Read Report</a></p>
+										<p class="actions special"><a href="https://github.com/d9647/cse6242_team7" class="button">Github Repository</a></p>
+									</li>
+									<li>
+										<span class="icon solid major style1 image" style="width: 12rem; height: 12rem; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 5px transparent, 0 0 0 6px rgba(255, 255, 255, 0.35);"><a href="images/6740_01.png" target="_blank"><img src="images/6740_01.png" alt="" style="max-width: 10.25rem; max-height: 9.25rem; width: auto; height: auto; cursor: pointer;" /></a></span>
+										<h3> Brain Tumor MRI Dataset Analysis & Classification</h3>
+										<p>EDA, Jupyter Notebook, Python (scikit-learn, pandas, numpy, matplotlib, seaborn, PyTorch/TensorFlow for neural network models), Machine Learning</p>
+										<p>This project used supervised, unsupervised and neural network models to solve  brain tumor MRI images classification problem. The dataset is preprocessed and analyzed to build accurate classification models for tumor detection and segmentation.</p>
+										<p class="actions special"><a href="https://github.com/d9647/isye6740_team2/blob/main/doc/Fall2024_Project_2.pdf" class="button">Read Report</a></p>
+										<p class="actions special"><a href="https://github.com/d9647/isye6740_team2/" class="button">Github Repository</a></p>
+									</li>
+								</ul>
+								<ul class="features">
+									<li>
+										<span class="icon solid major style1 image" style="width: 12rem; height: 12rem; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 5px transparent, 0 0 0 6px rgba(255, 255, 255, 0.35);"><a href="images/6203_01.png" target="_blank"><img src="images/6203_01.png" alt="" style="max-width: 10.25rem; max-height: 9.25rem; width: auto; height: auto; cursor: pointer;" /></a></span>
+										<h3> Predictive Analytics for Chart-Topping Video Games Success</h3>
+										<p>EDA, Python, R, Linear Regression, Logistic Regression</p>
+										<p>Utilize analytical methods to identify and understand the relationship between genres and platforms of video games and their market success based on historical sales data and user engagement (rating and metascore) metrics. </p>
+										<p class="actions special"><a href="https://github.com/d9647/mgt6203_project/blob/main/report/team14finalreport.pdf" class="button">Read Report</a></p>
+										<p class="actions special"><a href="https://github.com/d9647/mgt6203_project" class="button">Github Repository</a></p>
+									</li>
+									<li>
+										<span class="icon solid major style1 image" style="width: 12rem; height: 12rem; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 5px transparent, 0 0 0 6px rgba(255, 255, 255, 0.35);"><a href="images/edu_01.png" target="_blank"><img src="images/edu_01.png" alt="" style="max-width: 10.25rem; max-height: 9.25rem; width: auto; height: auto; cursor: pointer;" /></a></span>
+										<h3>Website: Yellow Pages</h3>
+										<p>Rapid prototyping, MVP, Full-stack (React/Typescript, Node.js), Github, </p>
+										<p>Yellow Pages to maintain Education Listing Directory, implemented Admin Dashboard, Listing Rating/Ranking.</p>
+										<p class="actions special"><a href="https://eduyellowpages.org/" class="button">Website</a></p>
+										<p class="actions special"><a href="https://github.com/d9647/EduDirectory" class="button">Github Repository</a></p>
+									</li>
+									<li>
+										<span class="icon solid major style1 image" style="width: 12rem; height: 12rem; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 5px transparent, 0 0 0 6px rgba(255, 255, 255, 0.35);"><a href="images/edu_02.png" target="_blank"><img src="images/edu_02.png" alt="" style="max-width: 10.25rem; max-height: 9.25rem; width: auto; height: auto; cursor: pointer;" /></a></span>
+										<h3>EduYellowPages QA Automation</h3>
+										<p>Rapid prototyping, MVP, Github, Playwright, Node.js, Smoke Test, Multibrowser, CI/CD integration</p>
+										<p>Automated testing suite for eduyellowpages.org using Playwright for UI and E2E testing.</p>
+										<p class="actions special"><a href="https://github.com/d9647/EduDirectory-qa" class="button">Github Repository</a></p>
+									</li>
+								</ul>
+								<!--<footer class="major">
+									<ul class="actions special">
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>
+								</footer>-->
+							</section>
+
+						<!-- Second Section -->
+							<section id="second" class="main special">
+								<header class="major">
+									<h2>Current Projects</h2>
+									<p>I'm currently working on several projects including:</p>
+								</header>
+								<ul class="content">
+									<li>Developing financial data analysis and visualization using Power BI and Tableau</li>
+									<li>Building a real-time stock trading simulation platform for personal finance education using AI, FastAPI, React, and Node.js</li>
+									<li>Designing and implementing a smart healthcare reporting system leveraging OpenAI APIs and AWS cloud services</li>
+									<li>Designing and implementing multi-repository CI/CD pipelines using GitHub Actions, enabling automated deployments to staging and production environments (MVP &rarr; scale).</li>
+								</ul>
+								<!--<footer class="major">
+									<ul class="actions special">
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>
+								</footer>-->
+  								<!--
+								<ul class="statistics">
+									<li class="style1">
+										<span class="icon solid fa-code-branch"></span>
+										<strong>5,120</strong> Etiam
+									</li>
+									<li class="style2">
+										<span class="icon fa-folder-open"></span>
+										<strong>8,192</strong> Magna
+									</li>
+									<li class="style3">
+										<span class="icon solid fa-signal"></span>
+										<strong>2,048</strong> Tempus
+									</li>
+									<li class="style4">
+										<span class="icon solid fa-laptop"></span>
+										<strong>4,096</strong> Aliquam
+									</li>
+									<li class="style5">
+										<span class="icon fa-gem"></span>
+										<strong>1,024</strong> Nullam
+									</li>
+								</ul>-->
+
+							</section>
+
+						<!-- Get Started -->
+
+							<section id="cta" class="main special">
+								<header class="major">
+								<h2>Skills</h2>
+								<!-- <p>Discover the skills section for an overview of my technical proficiencies. This part highlights the specific abilities and knowledge I've acquired, demonstrating my capability to excel in various projects and collaborative efforts</p> -->
+								</header>
+								<ul class="features">
+								<li>
+									<span class="icon solid major style1 fa-code"></span>
+									<h3><strong>Languages & Technology</strong></h3>
+									<p>Python, PyTorch<br>
+										NumPy, Pandas, Scikit-learn<br>
+										R, Java<br>
+										SQL, SQLite<br>
+										HTML, CSS, JavaScript<br>
+										Node.js, React, FastAPI<br>
+										Playwright, Selenium<br>
+										Github Actions, CI/CD<br>
+										Docker, Kubernetes <br>
+										AWS, GCP <br>
+										Tableau, Power BI<br>
+										Git, Jupyter Notebooks 
+									</p>
+								</li>
+								<li>
+									<span class="icon major style3 fa-paper-plane"></span>
+									<h3><strong>Data</strong></h3>
+									<p>Time Series Analysis<br>
+										Neural Networks<br>
+										Exploratory Data Analysis<br>
+										Natural Language Processing<br>
+										Machine Learning<br>
+										Statistical Analysis<br>
+										Classification<br>
+										Clustering<br>
+										ETL Design
+									</p>
+								</li>
+								<li>
+									<span class="icon major style5 fa-clipboard"></span>
+									<h3><strong>Business</strong></h3>
+									<p>Sales/Marketing Forecasting & Analysis<br>
+										Experiment Design & Analysis<br>
+										Process Improvement & Automation<br>
+										Project Management<br>
+										Customer Segmentation<br>
+										Churn Analysis<br>
+										Product Development & Analytics<br>
+										A/B Testing<br>
+									</p>
+								</li>
+							</ul>
+							<!--
+								<footer class="major">
+									<ul class="actions special">
+										<li><a href="generic.html" class="button primary">Get Started</a></li>
+										<li><a href="generic.html" class="button">Learn More</a></li>
+									</ul>
+								</footer>
+							-->
+							</section>
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<h2>Get In Touch</h2>
+							<p>
+								I'm always open to new opportunites and collaborations, both personal and professional. Don't hesitate to reach out to me and we can explore how to innovate together.
+							</p>
+							<ul class="actions">
+								<!-- <li><a href="generic.html" class="button">My Resume</a></li> -->
+							</ul>
+						</section>
+						<section>
+							<h2>Contact</h2>
+							<dl class="alt">
+								<dt>LinkedIn</dt>
+								<dd><a href="https://www.linkedin.com/in/weedingng">https://www.linkedin.com/in/weedingng</a></dd>
+								<dt>Github</dt>
+								<dd><a href="http://github.com/d9647">http://github.com/d9647</a></dd>
+								<dt>Email</dt>
+								<dd><a href="#">weeding[@]gmail.com</dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="http://github.com/d9647" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+		<script>
+			// Carousel functionality
+			(function() {
+				const carousel = document.getElementById('crimeInsightsCarousel');
+				if (!carousel) return;
+
+				const images = carousel.querySelectorAll('.carousel-image');
+				const dots = carousel.querySelectorAll('.carousel-dot');
+				let currentIndex = 0;
+				let intervalId;
+
+				function showImage(index) {
+					images.forEach((img, i) => {
+						img.classList.toggle('active', i === index);
+					});
+					dots.forEach((dot, i) => {
+						dot.classList.toggle('active', i === index);
+					});
+					currentIndex = index;
+				}
+
+				function nextImage() {
+					const nextIndex = (currentIndex + 1) % images.length;
+					showImage(nextIndex);
+				}
+
+				function startCarousel() {
+					intervalId = setInterval(nextImage, 3000); // Change image every 3 seconds
+				}
+
+				function stopCarousel() {
+					clearInterval(intervalId);
+				}
+
+				// Image click handler - open the currently active image
+				images.forEach((img) => {
+					img.addEventListener('click', () => {
+						const activeImage = carousel.querySelector('.carousel-image.active');
+						if (activeImage) {
+							window.open(activeImage.getAttribute('data-full-url'), '_blank');
+						}
+					});
+				});
+
+				// Dot click handlers
+				dots.forEach((dot, index) => {
+					dot.addEventListener('click', () => {
+						stopCarousel();
+						showImage(index);
+						startCarousel();
+					});
+				});
+
+				// Pause on hover
+				carousel.addEventListener('mouseenter', stopCarousel);
+				carousel.addEventListener('mouseleave', startCarousel);
+
+				// Start the carousel
+				startCarousel();
+			})();
+		</script>
+
+	</body>
+</html>
