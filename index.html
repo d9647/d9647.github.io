@@ -413,6 +413,11 @@
 			.heading-with-icon .resume-icon {
 				margin-top: -0.15rem;
 			}
+			.features .image a,
+			.features .image a img,
+			.icon.image a {
+				border: none !important;
+			}
 			body, p {
 				line-height: 1.45;
 			}
@@ -496,31 +501,11 @@
 								</header>
 								<ul class="features">
 									<li>
-										<span class="icon solid major style1 image" style="width: 12rem; height: 12rem; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 5px transparent, 0 0 0 6px rgba(255, 255, 255, 0.35);"><a href="images/tableau_sc1.png" target="_blank"><img src="images/tableau_sc1.png" alt="" style="max-width: 10.25rem; max-height: 9.25rem; width: auto; height: auto; cursor: pointer;" /></a></span>
-										<h3> LA Crime Dashboard</h3>
-										<p>EDA, Python (Pandas, NumPy), ETL, Tableau</p>
-										<p>This project showcases Los Angeles crime statistics (2010--2023) in an interactive Tableau Dashboard. I researched & collected LAPD crime datasets & cleaned them, merged with census data for the team to perform comprehensive insights into crime trends across the LA city.</p>
-										<div class="actions special icon-row"><a href="https://prod-apsoutheast-b.online.tableau.com/t/xsskoc/views/LACityCrime_Dashboard/LACityCrimeInsights/8727f685-c1be-4bcb-b693-e5417c65ef44/2cf6bf6c-2fd0-4153-9356-6c8febd5bdeb" class="tableau-icon" aria-label="Live Dashboard" data-label="Live Dashboard">
-											<svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
-												<g fill="none" stroke-width="6" stroke-linecap="round">
-													<path stroke="#f59f26" d="M32 10v12M32 42v12"/>
-													<path stroke="#f59f26" d="M22 32h-12M42 32h12"/>
-													<path stroke="#4472c4" d="M19 19v8M19 37v8"/>
-													<path stroke="#4472c4" d="M32 22h8M32 42h8"/>
-													<path stroke="#5c9bd5" d="M45 19v8M45 37v8"/>
-													<path stroke="#5c9bd5" d="M22 22h8M22 42h8"/>
-												</g>
-											</svg>
-										</a><a href="https://github.com/d9647/cse6242_team7" class="github-icon" aria-label="Github Repository" data-label="Github Repository">
-											<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.01c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.75.08-.74.08-.74 1.22.09 1.87 1.26 1.87 1.26 1.08 1.85 2.84 1.32 3.53 1.01.11-.79.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.54.12-3.2 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.89.12 3.2.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
-										</a></div>
-									</li>
-									<li>
 										<span class="icon solid major style1 image" style="width: 12rem; height: 12rem; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 5px transparent, 0 0 0 6px rgba(255, 255, 255, 0.35);">
 											<div class="carousel-container" id="crimeInsightsCarousel">
-												<img src="images/tableau_sc1.png" alt="LA Smart Crime Insights 1" class="carousel-image active" data-full-url="images/tableau_sc1.png" style="max-width: 10.25rem; max-height: 9.25rem; width: auto; height: auto; cursor: pointer;" />
-												<img src="images/tableau_sc2.png" alt="LA Smart Crime Insights 2" class="carousel-image active" data-full-url="images/tableau_sc2.png" style="max-width: 10.25rem; max-height: 9.25rem; width: auto; height: auto; cursor: pointer;" />
-												<img src="images/tableau_sc3.png" alt="LA Smart Crime Insights 3" class="carousel-image active" data-full-url="images/tableau_sc3.png" style="max-width: 10.25rem; max-height: 9.25rem; width: auto; height: auto; cursor: pointer;" />						
+												<img src="images/tableau_sc1.png" alt="LA Smart Crime Insights 1" class="carousel-image active" data-full-url="images/tableau_sc1.png" style="max-width: 8.75rem; max-height: 7.85rem; width: auto; height: auto; cursor: pointer;" />
+												<img src="images/tableau_sc2.png" alt="LA Smart Crime Insights 2" class="carousel-image active" data-full-url="images/tableau_sc2.png" style="max-width: 8.75rem; max-height: 7.85rem; width: auto; height: auto; cursor: pointer;" />
+												<img src="images/tableau_sc3.png" alt="LA Smart Crime Insights 3" class="carousel-image active" data-full-url="images/tableau_sc3.png" style="max-width: 8.75rem; max-height: 7.85rem; width: auto; height: auto; cursor: pointer;" />						
 												<div class="carousel-dots">
 													<span class="carousel-dot active" data-index="0"></span>
 													<span class="carousel-dot" data-index="1"></span>
@@ -528,8 +513,8 @@
 											</div>
 										</span>
 										<h3>LA Smart Crime Insights </h3>
-										<p>EDA, Jupyter Notebook, Python (scikit-learn, pandas, numpy, matplotlib, seaborn), Tableau, ETL, Machine Learning</p>
-										<p>This project analyzes Los Angeles crime data (2010--2023) uncover temporal, spatial, and demographic patterns and to assess how the COVID-19 pandemic affected crime dynamics. It integrates census data, spatial regression, time-series forecasting, and interactive dashboards.</p>
+										<p>EDA, Python (scikit-learn, pandas, numpy, matplotlib, seaborn), Tableau, ETL, Machine Learning</p>
+										<p>This project analyzes Los Angeles crime data (2010-23) uncover temporal, spatial, and demographic patterns and to assess how the COVID-19 pandemic affected crime dynamics.  I researched & collected LAPD crime datasets & cleaned them, merged with census data for the team to perform comprehensive insights into crime trends across the LA city & developed interactive statistical dashboard.</p>
 										<div class="actions special icon-row"><a href="https://public.tableau.com/shared/XG84W6H94?:display_count=n&:origin=viz_share_link" class="tableau-icon" aria-label="Live Dashboard" data-label="Live Dashboard">
 											<svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
 												<g fill="none" stroke-width="6" stroke-linecap="round">
@@ -552,10 +537,10 @@
 										</a></div>
 									</li>
 									<li>
-										<span class="icon solid major style1 image" style="width: 12rem; height: 12rem; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 5px transparent, 0 0 0 6px rgba(255, 255, 255, 0.35);"><a href="images/6740_01.png" target="_blank"><img src="images/6740_01.png" alt="" style="max-width: 10.25rem; max-height: 9.25rem; width: auto; height: auto; cursor: pointer;" /></a></span>
+										<span class="icon solid major style1 image" style="width: 12rem; height: 12rem; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 5px transparent, 0 0 0 6px rgba(255, 255, 255, 0.35);"><a href="images/6740_01.png" target="_blank"><img src="images/6740_01.png" alt="" style="max-width: 8.75rem; max-height: 7.85rem; width: auto; height: auto; cursor: pointer;" /></a></span>
 										<h3> Brain Tumor MRI Dataset Analysis & Classification</h3>
 										<p>EDA, Jupyter Notebook, Python (scikit-learn, pandas, numpy, matplotlib, seaborn, PyTorch/TensorFlow for neural network models), Machine Learning</p>
-										<p>This project used supervised, unsupervised and neural network models to solve  brain tumor MRI images classification problem. The dataset is preprocessed and analyzed to build accurate classification models for tumor detection and segmentation.</p>
+										<p>This project used supervised, unsupervised and neural network models to solve  brain tumor MRI images classification problem. I collected the datasets, preprocessed and analyzed them. Subsequently I built the classification models (MLP, CNN ResNET50) for tumor detection and segmentation.</p>
 										<div class="actions special icon-row"><a href="https://github.com/d9647/isye6740_team2/blob/main/doc/Fall2024_Project_2.pdf" class="pdf-icon" aria-label="Read Report" data-label="Read Report">
 											<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
 												<path fill="#d32f2f" d="M6 2h8l4 4v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"/>
@@ -566,13 +551,11 @@
 											<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.01c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.75.08-.74.08-.74 1.22.09 1.87 1.26 1.87 1.26 1.08 1.85 2.84 1.32 3.53 1.01.11-.79.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.54.12-3.2 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.89.12 3.2.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
 										</a></div>
 									</li>
-								</ul>
-								<ul class="features">
 									<li>
-										<span class="icon solid major style1 image" style="width: 12rem; height: 12rem; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 5px transparent, 0 0 0 6px rgba(255, 255, 255, 0.35);"><a href="images/6203_01.png" target="_blank"><img src="images/6203_01.png" alt="" style="max-width: 10.25rem; max-height: 9.25rem; width: auto; height: auto; cursor: pointer;" /></a></span>
+										<span class="icon solid major style1 image" style="width: 12rem; height: 12rem; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 5px transparent, 0 0 0 6px rgba(255, 255, 255, 0.35);"><a href="images/6203_01.png" target="_blank"><img src="images/6203_01.png" alt="" style="max-width: 8.75rem; max-height: 7.85rem; width: auto; height: auto; cursor: pointer;" /></a></span>
 										<h3> Predictive Analytics for Chart-Topping Video Games Success</h3>
 										<p>EDA, Python, R, Linear Regression, Logistic Regression</p>
-										<p>Utilize analytical methods to identify and understand the relationship between genres and platforms of video games and their market success based on historical sales data and user engagement (rating and metascore) metrics. </p>
+										<p>Utilize analytical methods to identify and understand the relationship between genres and platforms of video games and their market success based on historical sales data and user engagement (rating and metascore) metrics. I conducted EDA and built linear regression models with R to predict game sales.</p>
 										<div class="actions special icon-row"><a href="https://github.com/d9647/mgt6203_project/blob/main/report/team14finalreport.pdf" class="pdf-icon" aria-label="Read Report" data-label="Read Report">
 											<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
 												<path fill="#d32f2f" d="M6 2h8l4 4v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"/>
@@ -583,6 +566,8 @@
 											<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.01c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.75.08-.74.08-.74 1.22.09 1.87 1.26 1.87 1.26 1.08 1.85 2.84 1.32 3.53 1.01.11-.79.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.54.12-3.2 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.89.12 3.2.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
 										</a></div>
 									</li>
+								</ul>
+								<ul class="features">
 									<li>
 										<span class="icon solid major style1 image" style="width: 12rem; height: 12rem; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 5px transparent, 0 0 0 6px rgba(255, 255, 255, 0.35);"><a href="images/edu_01.png" target="_blank"><img src="images/edu_01.png" alt="" style="max-width: 10.25rem; max-height: 9.25rem; width: auto; height: auto; cursor: pointer;" /></a></span>
 										<h3>Website: Yellow Pages</h3>
@@ -605,6 +590,17 @@
 											<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.01c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.75.08-.74.08-.74 1.22.09 1.87 1.26 1.87 1.26 1.08 1.85 2.84 1.32 3.53 1.01.11-.79.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.54.12-3.2 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.89.12 3.2.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
 										</a></p>
 									</li>
+									<li>
+										<span class="icon solid major style1 image" style="width: 12rem; height: 12rem; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 1px transparent, 0 0 0 5px rgba(255, 255, 255, 0.35);"><a href="images/stock_01.png" target="_blank"><img src="images/stock_01.png" alt="" style="max-width: 8.75rem; max-height: 7.85rem; width: auto; height: auto; cursor: pointer;" /></a></span>
+										<h3> Stock Simulation Lab</h3><small style="color: #0b8f39;">In Progress</small>
+										<p>Rapid prototyping, MVP, FastAPI, Python, React/Next.js, LLM, Javascript/Typescript, PostgreSQL, Docker, Redis</p>
+										<p>I rapid-prototyped a stock simulation lab using Claude Code, OpenAI Codex. The lab allows users to simulate trading strategies and analyze market trends in real historical data (technical data and news). I also implemented solo- and multi- players game & leaderboard / export PDF features with minimalistic UX/UI experience..</p>
+										<div class="actions special icon-row">
+											<a href="https://github.com/d9647/stock-ai-platform" class="github-icon" aria-label="Github Repository" data-label="Github Repository">
+												<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.01c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.75.08-.74.08-.74 1.22.09 1.87 1.26 1.87 1.26 1.08 1.85 2.84 1.32 3.53 1.01.11-.79.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.54.12-3.2 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.89.12 3.2.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+											</a>
+										</div>
+									</li>
 								</ul>
 								<!--<footer class="major">
 									<ul class="actions special">
@@ -620,10 +616,10 @@
 									<p>I'm currently working on several projects including:</p>
 								</header>
 								<div class="content">
-									<p>Developing financial data analysis and visualization using Power BI and Tableau</p>
-									<p>Building a stock trading simulator for education purposes, using LLM, FastAPI, React/Next.js, Swift (SwiftUI) - <a href="https://github.com/d9647/cse6242_team7" class="github-icon" aria-label="Github Repository" data-label="Github Repository">
+									<p>Building a stock trading simulator for education purposes, using LLM, FastAPI, React/Next.js, Swift (SwiftUI)  <a href="https://github.com/d9647/cse6242_team7" class="github-icon" aria-label="Github Repository" data-label="Github Repository">
 										<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.01c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.75.08-.74.08-.74 1.22.09 1.87 1.26 1.87 1.26 1.08 1.85 2.84 1.32 3.53 1.01.11-.79.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.54.12-3.2 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.89.12 3.2.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
 									</a></p>
+									<p>Developing financial data analysis and visualization using Power BI and Tableau</p>
 									<p>Designing and implementing a smart healthcare reporting system leveraging OpenAI APIs and AWS cloud services</p>
 									<p>Designing and implementing multi-repository CI/CD pipelines using GitHub Actions, enabling automated deployments to staging and production environments (MVP &rarr; scale).</p>
 								</div>
