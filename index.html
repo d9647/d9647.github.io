@@ -52,6 +52,382 @@
 			.carousel-dot.active {
 				background-color: rgba(255, 255, 255, 1);
 			}
+			.github-progress {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: auto;
+				height: auto;
+				font-size: 1.6rem;
+				color: #0b4624 !important;
+				background: transparent;
+				text-decoration: none;
+				position: relative;
+				transition: transform 0.2s ease;
+			}
+			.github-progress:before {
+				color: inherit;
+			}
+			.github-progress:hover {
+				transform: translateY(-1px);
+			}
+			.github-progress::after {
+				content: attr(data-label);
+				position: absolute;
+				bottom: -2.2rem;
+				left: 50%;
+				transform: translateX(-50%);
+				background: #bbcbc3;
+				color: #0b4624;
+				padding: 0.25rem 0.6rem;
+				border-radius: 0.35rem;
+				font-size: 0.8rem;
+				white-space: nowrap;
+				opacity: 0;
+				pointer-events: none;
+				transition: opacity 0.15s ease;
+				box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+			}
+			.github-progress:hover::after {
+				opacity: 1;
+			}
+			.tableau-icon {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 2.6rem;
+				height: 2.6rem;
+				margin-left: 0.4rem;
+				background: #ffffff;
+				border: 1px solid #d8dee4;
+				border-radius: 50%;
+				box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+				transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+				position: relative;
+			}
+			.tableau-icon svg {
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+			.tableau-icon:hover {
+				transform: translateY(-1px);
+				border-color: #adb6c2;
+				box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+			}
+			.tableau-icon::after {
+				content: attr(data-label);
+				position: absolute;
+				bottom: -2.3rem;
+				left: 50%;
+				transform: translateX(-50%);
+				background: rgba(0, 0, 0, 0.8);
+				color: #ffffff;
+				padding: 0.25rem 0.6rem;
+				border-radius: 0.3rem;
+				font-size: 0.8rem;
+				white-space: nowrap;
+				opacity: 0;
+				pointer-events: none;
+				transition: opacity 0.15s ease;
+			}
+			.tableau-icon:hover::after {
+				opacity: 1;
+			}
+			.github-icon {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 2.6rem;
+				height: 2.6rem;
+				margin-left: 0.4rem;
+				background: #ffffff;
+				border: 1px solid #d8dee4;
+				border-radius: 50%;
+				box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+				transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+				position: relative;
+			}
+			.github-icon svg {
+				width: 1.5rem;
+				height: 1.5rem;
+				fill: #24292e;
+			}
+			.github-icon:hover {
+				transform: translateY(-1px);
+				border-color: #adb6c2;
+				box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+			}
+			.github-icon::after {
+				content: attr(data-label);
+				position: absolute;
+				bottom: -2.3rem;
+				left: 50%;
+				transform: translateX(-50%);
+				background: rgba(0, 0, 0, 0.8);
+				color: #ffffff;
+				padding: 0.25rem 0.6rem;
+				border-radius: 0.3rem;
+				font-size: 0.8rem;
+				white-space: nowrap;
+				opacity: 0;
+				pointer-events: none;
+				transition: opacity 0.15s ease;
+			}
+			.github-icon:hover::after {
+				opacity: 1;
+			}
+			.pdf-icon {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 2.6rem;
+				height: 2.6rem;
+				margin-left: 0.4rem;
+				background: #ffffff;
+				border: 1px solid #d8dee4;
+				border-radius: 50%;
+				box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+				transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+				position: relative;
+			}
+			.pdf-icon svg {
+				width: 1.5rem;
+				height: 1.5rem;
+			}
+			.pdf-icon:hover {
+				transform: translateY(-1px);
+				border-color: #adb6c2;
+				box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+			}
+			.pdf-icon::after {
+				content: attr(data-label);
+				position: absolute;
+				bottom: -2.3rem;
+				left: 50%;
+				transform: translateX(-50%);
+				background: rgba(0, 0, 0, 0.8);
+				color: #ffffff;
+				padding: 0.25rem 0.6rem;
+				border-radius: 0.3rem;
+				font-size: 0.8rem;
+				white-space: nowrap;
+				opacity: 0;
+				pointer-events: none;
+				transition: opacity 0.15s ease;
+			}
+			.pdf-icon:hover::after {
+				opacity: 1;
+			}
+			.website-icon {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 2.6rem;
+				height: 2.6rem;
+				margin-left: 0.4rem;
+				background: #ffffff;
+				border: 1px solid #d8dee4;
+				border-radius: 50%;
+				box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+				transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+				position: relative;
+			}
+			.website-icon svg {
+				width: 1.5rem;
+				height: 1.5rem;
+				fill: #1f6feb;
+			}
+			.website-icon:hover {
+				transform: translateY(-1px);
+				border-color: #adb6c2;
+				box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+			}
+			.website-icon::after {
+				content: attr(data-label);
+				position: absolute;
+				bottom: -2.3rem;
+				left: 50%;
+				transform: translateX(-50%);
+				background: rgba(0, 0, 0, 0.8);
+				color: #ffffff;
+				padding: 0.25rem 0.6rem;
+				border-radius: 0.3rem;
+				font-size: 0.8rem;
+				white-space: nowrap;
+				opacity: 0;
+				pointer-events: none;
+				transition: opacity 0.15s ease;
+			}
+			.website-icon:hover::after {
+				opacity: 1;
+			}
+			.icon-row {
+				display: flex;
+				gap: 0.6rem;
+				align-items: center;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+			.icon-row > .tableau-icon,
+			.icon-row > .github-icon,
+			.icon-row > .pdf-icon,
+			.icon-row > .website-icon,
+			.icon-row > .linkedin-icon,
+			.icon-row > .github-profile-icon {
+				margin-left: 0;
+			}
+			.resume-icon {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 2.6rem;
+				height: 2.6rem;
+				margin-left: 0.4rem;
+				background: #ffffff;
+				border: 1px solid #d8dee4;
+				border-radius: 50%;
+				box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+				transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+				position: relative;
+			}
+			.resume-icon svg {
+				width: 1.5rem;
+				height: 1.5rem;
+				fill: #1f6feb;
+			}
+			.resume-icon:hover {
+				transform: translateY(-1px);
+				border-color: #adb6c2;
+				box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+			}
+			.resume-icon::after {
+				content: attr(data-label);
+				position: absolute;
+				bottom: -2.3rem;
+				left: 50%;
+				transform: translateX(-50%);
+				background: rgba(0, 0, 0, 0.8);
+				color: #ffffff;
+				padding: 0.25rem 0.6rem;
+				border-radius: 0.3rem;
+				font-size: 0.8rem;
+				white-space: nowrap;
+				opacity: 0;
+				pointer-events: none;
+				transition: opacity 0.15s ease;
+			}
+			.resume-icon:hover::after {
+				opacity: 1;
+			}
+			.linkedin-icon {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 2.6rem;
+				height: 2.6rem;
+				margin-left: 0.4rem;
+				background: #ffffff;
+				border: 1px solid #d8dee4;
+				border-radius: 50%;
+				box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+				transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+				position: relative;
+			}
+			.linkedin-icon svg {
+				width: 1.3rem;
+				height: 1.3rem;
+				fill: #0a66c2;
+			}
+			.linkedin-icon:hover {
+				transform: translateY(-1px);
+				border-color: #adb6c2;
+				box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+			}
+			.linkedin-icon::after {
+				content: attr(data-label);
+				position: absolute;
+				bottom: -2.3rem;
+				left: 50%;
+				transform: translateX(-50%);
+				background: rgba(0, 0, 0, 0.8);
+				color: #ffffff;
+				padding: 0.25rem 0.6rem;
+				border-radius: 0.3rem;
+				font-size: 0.8rem;
+				white-space: nowrap;
+				opacity: 0;
+				pointer-events: none;
+				transition: opacity 0.15s ease;
+			}
+			.linkedin-icon:hover::after {
+				opacity: 1;
+			}
+			.github-profile-icon {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 2.6rem;
+				height: 2.6rem;
+				margin-left: 0.4rem;
+				background: #ffffff;
+				border: 1px solid #d8dee4;
+				border-radius: 50%;
+				box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+				transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+				position: relative;
+			}
+			.github-profile-icon svg {
+				width: 1.5rem;
+				height: 1.5rem;
+				fill: #24292e;
+			}
+			.github-profile-icon:hover {
+				transform: translateY(-1px);
+				border-color: #adb6c2;
+				box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+			}
+			.github-profile-icon::after {
+				content: attr(data-label);
+				position: absolute;
+				bottom: -2.3rem;
+				left: 50%;
+				transform: translateX(-50%);
+				background: rgba(0, 0, 0, 0.8);
+				color: #ffffff;
+				padding: 0.25rem 0.6rem;
+				border-radius: 0.3rem;
+				font-size: 0.8rem;
+				white-space: nowrap;
+				opacity: 0;
+				pointer-events: none;
+				transition: opacity 0.15s ease;
+			}
+			.github-profile-icon:hover::after {
+				opacity: 1;
+			}
+			.heading-with-icon {
+				display: flex;
+				align-items: center;
+				gap: 0.6rem;
+			}
+			.heading-with-icon .resume-icon {
+				margin-top: -0.15rem;
+			}
+			body, p {
+				line-height: 1.45;
+			}
+			p {
+				margin: 0 0 0.6em 0;
+			}
+			.features h3 {
+				margin: 0.4em 0;
+			}
+			.features li p {
+				margin: 0.35em 0;
+			}
+			.actions.special {
+				margin: 0.5em 0 0.4em;
+			}
 		</style>
 	</head>
 	<body class="is-preload">
@@ -91,9 +467,23 @@
 										<p>I love data and technology, and how they can be used to solve real-world problems. I have a strong eye for quality and detail, and I enjoy working in teams to deliver high-quality products. My earlier experiences in software QA—before my career gap—shaped me to be adaptable, resilient, and a fast learner.</p> 
 										<p>I hold a Bachelor of Applied Science in Computer Engineering and a Master’s in Communication, Software & Network from NTU, Singapore and I am currently advancing my analytical and technical expertise as a Master of Science in Analytics student at Georgia Tech.</p>
 										<p>Seeking entry- to mid-level opportunities to apply skills in data analysis, software testing, and automation to deliver impactful solutions.</p>
-										<ul class="actions">
-											<li><a href="https://drive.google.com/file/d/1xy8MyBp7H5ATsaaLH94Eexqm7t6O0mX8/view?usp=drive_link" class="button">My Resume</a></li>
-										</ul>
+										<div class="actions special icon-row">
+											<a href="https://drive.google.com/file/d/1xy8MyBp7H5ATsaaLH94Eexqm7t6O0mX8/view?usp=drive_link" class="resume-icon" aria-label="My Resume" data-label="My Resume">
+												<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+													<path d="M6 2h8l4 4v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z" />
+													<path fill="#e6edf3" d="M14 2v4h4l-4-4Z" />
+													<path fill="#e6edf3" d="M7.5 17.5h9v-1h-9v1Zm0-2.75h9v-1h-9v1Zm0-2.75h6v-1h-6v1Z" />
+												</svg>
+											</a>
+											<a href="https://www.linkedin.com/in/weedingng" class="linkedin-icon" aria-label="LinkedIn" data-label="LinkedIn">
+												<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+													<path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5ZM.24 8.11h4.52V23.5H.24V8.1Zm7.94 0h4.34v2.1h.06c.6-1.13 2.06-2.32 4.24-2.32 4.54 0 5.38 2.98 5.38 6.85v8.76h-4.52v-7.77c0-1.85-.04-4.23-2.58-4.23-2.58 0-2.98 2.01-2.98 4.1v7.9H8.18V8.1Z"/>
+												</svg>
+											</a>
+											<a href="http://github.com/d9647" class="github-profile-icon" aria-label="GitHub Profile" data-label="GitHub Profile">
+												<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.01c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.75.08-.74.08-.74 1.22.09 1.87 1.26 1.87 1.26 1.08 1.85 2.84 1.32 3.53 1.01.11-.79.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.54.12-3.2 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.89.12 3.2.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+											</a>
+										</div>
 									</div>
 									<span class="icon solid major style1 image small-icon"><img src="images/profile.png" alt="" /></span>
 								</div>
@@ -110,8 +500,20 @@
 										<h3> LA Crime Dashboard</h3>
 										<p>EDA, Python (Pandas, NumPy), ETL, Tableau</p>
 										<p>This project showcases Los Angeles crime statistics (2010--2023) in an interactive Tableau Dashboard. The LAPD crime datasets are cleaned and merged with census data to provide comprehensive insights into crime trends across the LA city.</p>
-										<p class="actions special"><a href="https://prod-apsoutheast-b.online.tableau.com/t/xsskoc/views/LACityCrime_Dashboard/LACityCrimeInsights/8727f685-c1be-4bcb-b693-e5417c65ef44/2cf6bf6c-2fd0-4153-9356-6c8febd5bdeb" class="button">Live Dashboard</a></p>
-										<p class="actions special"><a href="https://github.com/d9647/cse6242_team7" class="button">Github Repository</a></p>
+										<div class="actions special icon-row"><a href="https://prod-apsoutheast-b.online.tableau.com/t/xsskoc/views/LACityCrime_Dashboard/LACityCrimeInsights/8727f685-c1be-4bcb-b693-e5417c65ef44/2cf6bf6c-2fd0-4153-9356-6c8febd5bdeb" class="tableau-icon" aria-label="Live Dashboard" data-label="Live Dashboard">
+											<svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+												<g fill="none" stroke-width="6" stroke-linecap="round">
+													<path stroke="#f59f26" d="M32 10v12M32 42v12"/>
+													<path stroke="#f59f26" d="M22 32h-12M42 32h12"/>
+													<path stroke="#4472c4" d="M19 19v8M19 37v8"/>
+													<path stroke="#4472c4" d="M32 22h8M32 42h8"/>
+													<path stroke="#5c9bd5" d="M45 19v8M45 37v8"/>
+													<path stroke="#5c9bd5" d="M22 22h8M22 42h8"/>
+												</g>
+											</svg>
+										</a><a href="https://github.com/d9647/cse6242_team7" class="github-icon" aria-label="Github Repository" data-label="Github Repository">
+											<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.01c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.75.08-.74.08-.74 1.22.09 1.87 1.26 1.87 1.26 1.08 1.85 2.84 1.32 3.53 1.01.11-.79.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.54.12-3.2 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.89.12 3.2.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+										</a></div>
 									</li>
 									<li>
 										<span class="icon solid major style1 image" style="width: 12rem; height: 12rem; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 5px transparent, 0 0 0 6px rgba(255, 255, 255, 0.35);">
@@ -127,17 +529,41 @@
 										<h3>LA Smart Crime Insights </h3>
 										<p>EDA, Jupyter Notebook, Python (scikit-learn, pandas, numpy, matplotlib, seaborn), Tableau, ETL, Machine Learning</p>
 										<p>This project analyzes Los Angeles crime data (2010--2023) uncover temporal, spatial, and demographic patterns and to assess how the COVID-19 pandemic affected crime dynamics. It integrates census data, spatial regression, time-series forecasting, and interactive dashboards.</p>
-										<p class="actions special"><a href="https://public.tableau.com/shared/XG84W6H94?:display_count=n&:origin=viz_share_link" class="button">Live Dashboard</a></p>
-										<p class="actions special"><a href="https://github.com/d9647/cse6242_team7/blob/main/DOC/team007report.pdf" class="button">Read Report</a></p>
-										<p class="actions special"><a href="https://github.com/d9647/cse6242_team7" class="button">Github Repository</a></p>
+										<div class="actions special icon-row"><a href="https://public.tableau.com/shared/XG84W6H94?:display_count=n&:origin=viz_share_link" class="tableau-icon" aria-label="Live Dashboard" data-label="Live Dashboard">
+											<svg viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+												<g fill="none" stroke-width="6" stroke-linecap="round">
+													<path stroke="#f59f26" d="M32 10v12M32 42v12"/>
+													<path stroke="#f59f26" d="M22 32h-12M42 32h12"/>
+													<path stroke="#4472c4" d="M19 19v8M19 37v8"/>
+													<path stroke="#4472c4" d="M32 22h8M32 42h8"/>
+													<path stroke="#5c9bd5" d="M45 19v8M45 37v8"/>
+													<path stroke="#5c9bd5" d="M22 22h8M22 42h8"/>
+												</g>
+											</svg>
+										</a><a href="https://github.com/d9647/cse6242_team7/blob/main/DOC/team007report.pdf" class="pdf-icon" aria-label="Read Report" data-label="Read Report">
+											<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+												<path fill="#d32f2f" d="M6 2h8l4 4v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"/>
+												<path fill="#f5f5f5" d="M14 2v4h4l-4-4Z"/>
+												<path fill="#fff" d="M7.5 17.5h9v-1h-9v1Zm0-2.75h9v-1h-9v1Zm0-2.75h6v-1h-6v1Z"/>
+											</svg>
+										</a><a href="https://github.com/d9647/cse6242_team7" class="github-icon" aria-label="Github Repository" data-label="Github Repository">
+											<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.01c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.75.08-.74.08-.74 1.22.09 1.87 1.26 1.87 1.26 1.08 1.85 2.84 1.32 3.53 1.01.11-.79.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.54.12-3.2 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.89.12 3.2.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+										</a></div>
 									</li>
 									<li>
 										<span class="icon solid major style1 image" style="width: 12rem; height: 12rem; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 5px transparent, 0 0 0 6px rgba(255, 255, 255, 0.35);"><a href="images/6740_01.png" target="_blank"><img src="images/6740_01.png" alt="" style="max-width: 10.25rem; max-height: 9.25rem; width: auto; height: auto; cursor: pointer;" /></a></span>
 										<h3> Brain Tumor MRI Dataset Analysis & Classification</h3>
 										<p>EDA, Jupyter Notebook, Python (scikit-learn, pandas, numpy, matplotlib, seaborn, PyTorch/TensorFlow for neural network models), Machine Learning</p>
 										<p>This project used supervised, unsupervised and neural network models to solve  brain tumor MRI images classification problem. The dataset is preprocessed and analyzed to build accurate classification models for tumor detection and segmentation.</p>
-										<p class="actions special"><a href="https://github.com/d9647/isye6740_team2/blob/main/doc/Fall2024_Project_2.pdf" class="button">Read Report</a></p>
-										<p class="actions special"><a href="https://github.com/d9647/isye6740_team2/" class="button">Github Repository</a></p>
+										<div class="actions special icon-row"><a href="https://github.com/d9647/isye6740_team2/blob/main/doc/Fall2024_Project_2.pdf" class="pdf-icon" aria-label="Read Report" data-label="Read Report">
+											<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+												<path fill="#d32f2f" d="M6 2h8l4 4v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"/>
+												<path fill="#f5f5f5" d="M14 2v4h4l-4-4Z"/>
+												<path fill="#fff" d="M7.5 17.5h9v-1h-9v1Zm0-2.75h9v-1h-9v1Zm0-2.75h6v-1h-6v1Z"/>
+											</svg>
+										</a><a href="https://github.com/d9647/isye6740_team2/" class="github-icon" aria-label="Github Repository" data-label="Github Repository">
+											<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.01c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.75.08-.74.08-.74 1.22.09 1.87 1.26 1.87 1.26 1.08 1.85 2.84 1.32 3.53 1.01.11-.79.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.54.12-3.2 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.89.12 3.2.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+										</a></div>
 									</li>
 								</ul>
 								<ul class="features">
@@ -146,23 +572,37 @@
 										<h3> Predictive Analytics for Chart-Topping Video Games Success</h3>
 										<p>EDA, Python, R, Linear Regression, Logistic Regression</p>
 										<p>Utilize analytical methods to identify and understand the relationship between genres and platforms of video games and their market success based on historical sales data and user engagement (rating and metascore) metrics. </p>
-										<p class="actions special"><a href="https://github.com/d9647/mgt6203_project/blob/main/report/team14finalreport.pdf" class="button">Read Report</a></p>
-										<p class="actions special"><a href="https://github.com/d9647/mgt6203_project" class="button">Github Repository</a></p>
+										<div class="actions special icon-row"><a href="https://github.com/d9647/mgt6203_project/blob/main/report/team14finalreport.pdf" class="pdf-icon" aria-label="Read Report" data-label="Read Report">
+											<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+												<path fill="#d32f2f" d="M6 2h8l4 4v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2Z"/>
+												<path fill="#f5f5f5" d="M14 2v4h4l-4-4Z"/>
+												<path fill="#fff" d="M7.5 17.5h9v-1h-9v1Zm0-2.75h9v-1h-9v1Zm0-2.75h6v-1h-6v1Z"/>
+											</svg>
+										</a><a href="https://github.com/d9647/mgt6203_project" class="github-icon" aria-label="Github Repository" data-label="Github Repository">
+											<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.01c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.75.08-.74.08-.74 1.22.09 1.87 1.26 1.87 1.26 1.08 1.85 2.84 1.32 3.53 1.01.11-.79.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.54.12-3.2 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.89.12 3.2.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+										</a></div>
 									</li>
 									<li>
 										<span class="icon solid major style1 image" style="width: 12rem; height: 12rem; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 5px transparent, 0 0 0 6px rgba(255, 255, 255, 0.35);"><a href="images/edu_01.png" target="_blank"><img src="images/edu_01.png" alt="" style="max-width: 10.25rem; max-height: 9.25rem; width: auto; height: auto; cursor: pointer;" /></a></span>
 										<h3>Website: Yellow Pages</h3>
 										<p>Rapid prototyping, MVP, Full-stack (React/Typescript, Node.js), Github, </p>
 										<p>Yellow Pages to maintain Education Listing Directory, implemented Admin Dashboard, Listing Rating/Ranking.</p>
-										<p class="actions special"><a href="https://eduyellowpages.org/" class="button">Website</a></p>
-										<p class="actions special"><a href="https://github.com/d9647/EduDirectory" class="button">Github Repository</a></p>
+										<div class="actions special icon-row"><a href="https://eduyellowpages.org/" class="website-icon" aria-label="Website" data-label="Website">
+											<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+												<path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 2c1.26 0 2.42.37 3.4 1h-2.1A17 17 0 0 0 12 8.3 17 17 0 0 0 10.7 5h-2.1A7.96 7.96 0 0 1 12 4Zm-4.7 2h1.73c-.14.46-.26.95-.36 1.47-.17.84-.28 1.74-.34 2.53H4.18a8 8 0 0 1 3.12-4Zm-3.12 6h3.12c.06.79.17 1.69.34 2.53.1.52.22 1.01.36 1.47H7.3A8 8 0 0 1 4.18 12Zm3.22 6h2.1c.3.9.64 1.73 1.0 2.3A8 8 0 0 1 7.4 18Zm3.52 2.71c-.3-.47-.77-1.38-1.2-2.7h2.46c-.43 1.32-.9 2.23-1.26 2.7Zm1.68-4.71h-3.2c-.16-.56-.3-1.18-.42-1.86-.17-.86-.28-1.77-.35-2.62h3.97V12Zm0-3.86H9.63c.07-.85.18-1.76.35-2.62.12-.68.26-1.3.42-1.86h3.2V8.14Zm1.44 8.57c.36-.57.7-1.4 1.0-2.3h2.1a8 8 0 0 1-3.1 2.3Zm3.1-4.57h-3.12c-.06-.79-.17-1.69-.34-2.53a16 16 0 0 1-.36-1.47h1.73a8 8 0 0 1 3.1 4Zm-3.1-6h-1.73c.14-.46.26-.95.36-1.47.17-.84.28-1.74.34-2.53h-1.74a8 8 0 0 1 3.1 4Zm-3.1-4h-2.46c.43-1.32.9-2.23 1.26-2.7.3.47.77 1.38 1.2 2.7Zm-1.68 0h-2.1a8 8 0 0 1 3.1-2.3 14 14 0 0 0-1.0 2.3Zm1.68 8.71v-1.42h3.97c-.07.85-.18 1.76-.35 2.62-.12.68-.26 1.3-.42 1.86h-3.2c.2-.64.38-1.36.52-2.1Z" fill="#1f6feb"/>
+											</svg>
+										</a><a href="https://github.com/d9647/EduDirectory" class="github-icon" aria-label="Github Repository" data-label="Github Repository">
+											<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.01c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.75.08-.74.08-.74 1.22.09 1.87 1.26 1.87 1.26 1.08 1.85 2.84 1.32 3.53 1.01.11-.79.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.54.12-3.2 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.89.12 3.2.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+										</a></div>
 									</li>
 									<li>
 										<span class="icon solid major style1 image" style="width: 12rem; height: 12rem; display: inline-flex; align-items: center; justify-content: center; box-shadow: 0 0 0 5px transparent, 0 0 0 6px rgba(255, 255, 255, 0.35);"><a href="images/edu_02.png" target="_blank"><img src="images/edu_02.png" alt="" style="max-width: 10.25rem; max-height: 9.25rem; width: auto; height: auto; cursor: pointer;" /></a></span>
 										<h3>EduYellowPages QA Automation</h3>
 										<p>Rapid prototyping, MVP, Github, Playwright, Node.js, Smoke Test, Multibrowser, CI/CD integration</p>
 										<p>Automated testing suite for eduyellowpages.org using Playwright for UI and E2E testing.</p>
-										<p class="actions special"><a href="https://github.com/d9647/EduDirectory-qa" class="button">Github Repository</a></p>
+										<p class="actions special"><a href="https://github.com/d9647/EduDirectory-qa" class="github-icon" aria-label="Github Repository" data-label="Github Repository">
+											<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.01c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.75.08-.74.08-.74 1.22.09 1.87 1.26 1.87 1.26 1.08 1.85 2.84 1.32 3.53 1.01.11-.79.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.54.12-3.2 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.89.12 3.2.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+										</a></p>
 									</li>
 								</ul>
 								<!--<footer class="major">
@@ -180,7 +620,9 @@
 								</header>
 								<div class="content">
 									<p>Developing financial data analysis and visualization using Power BI and Tableau</p>
-									<p>Building a stock trading simulator for education purposes, using LLM, FastAPI, React/Next.js, Swift (SwiftUI)</p>
+									<p>Building a stock trading simulator for education purposes, using LLM, FastAPI, React/Next.js, Swift (SwiftUI) - <a href="https://github.com/d9647/cse6242_team7" class="github-icon" aria-label="Github Repository" data-label="Github Repository">
+										<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.01c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.35-1.76-1.35-1.76-1.1-.75.08-.74.08-.74 1.22.09 1.87 1.26 1.87 1.26 1.08 1.85 2.84 1.32 3.53 1.01.11-.79.42-1.32.76-1.62-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.54.12-3.2 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.3-1.55 3.3-1.23 3.3-1.23.66 1.66.25 2.89.12 3.2.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58A12 12 0 0 0 12 .5Z"/></svg>
+									</a></p>
 									<p>Designing and implementing a smart healthcare reporting system leveraging OpenAI APIs and AWS cloud services</p>
 									<p>Designing and implementing multi-repository CI/CD pipelines using GitHub Actions, enabling automated deployments to staging and production environments (MVP &rarr; scale).</p>
 								</div>
@@ -400,4 +842,3 @@
 	</body>
 
 </html>
-
